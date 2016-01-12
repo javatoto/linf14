@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Traitement des données</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <!-- Bootstrap CSS -->    
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/bootstrap-theme.css" rel="stylesheet">
+    </head>
+	<body>
+		<div class="container">
+			<h1>Đăng ký</h1>
+			<form method="POST" action="page.php" class="form-horizontal">
+				<div class="form-group">
+                    <label class="col-sm-2 control-label">Họ tên</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="name" placeholder="Điền vào tên của bạn"/>
+                    </div>
+                </div>
+				
+				<div class="form-group">
+                    <label class="col-sm-2 control-label">Email</label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" name="email" placeholder="Điền vào email của bạn"/>
+                    </div>
+                </div>
+				
+				<div class="form-group">
+                    <label class="col-sm-2 control-label">Mật khẩu</label>
+                    <div class="col-sm-10">
+                        <input type="password" class="form-control" name="password" placeholder="Hãy chọn một mật khẩu"/>
+                    </div>
+                </div>
+				
+				<div class="form-group">
+                    <label class="col-sm-2 control-label">Giới tính</label>
+                    <div class="col-sm-10">
+						<label class="radio-inline"><input type="radio" name="gender" value="Nam">Nam</label>
+						<label class="radio-inline"><input type="radio" name="gender" value="Nu">Nữ</label>
+                    </div>
+                </div>
+				
+				<div class="form-group">
+				  <label class="col-sm-2 control-label">Năm sinh:</label>
+				  <div class="col-sm-10">
+					  <select class="form-control" name="year">
+						<option>1983</option>
+						<option>1984</option>
+						<option>1985</option>
+						<option>1986</option>
+						<option>1987</option>
+						<option>1988</option>
+						<option>1989</option>
+						<option>1990</option>
+						<option>1991</option>
+						<option>1992</option>
+						<option>1993</option>
+						<option>1994</option>
+						<option>1995</option>
+						<option>1996</option>
+						<option>1997</option>
+						<option>1998</option>
+					</select>
+				  </div>
+				</div>
+
+				<div class="form-group">
+                    <label class="col-sm-2 control-label">Có bằng lái xe</label>
+                    <div class="col-sm-10">
+						<div class="checkbox">
+							<label><input type="checkbox" name="license"></label>
+						</div>
+                    </div>
+                </div>
+				
+				<div class="form-group">
+                    <label class="col-sm-2 control-label">Tự giới thiệu</label>
+                    <div class="col-sm-10">
+						<textarea name="comment" class="form-control" placeholder="Hãy giới thiệu về bạn ..."></textarea>
+                    </div>
+                </div>
+				
+				<input type="hidden" name="secret" value="123456"/>
+				<input type="submit" value="Gửi đi" class="btn btn-primary"/>
+			</form>
+		</div>
+	</body>
+</html>
